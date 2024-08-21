@@ -20,7 +20,7 @@ palavras = list()
 
 with open('texto.txt', 'r') as arquivo:
     for linha in arquivo:
-        palavras.extend(linha.split())
+        palavras.extend(linha.lower().split())
 
 bubble_sort_palavras = palavras.copy()
 inicio = time.time()
